@@ -5,9 +5,9 @@
 #define ALT_C_L LALT_T(KC_R)
 #define CTL_C_L LCTL_T(KC_S)
 #define SFT_C_L LSFT_T(KC_T)
-#define SFT_C_R RSFT_T(KC_S)
-#define CTL_C_R RCTL_T(KC_C)
-#define ALT_C_R RALT_T(KC_A)
+#define SFT_C_R RSFT_T(KC_N)
+#define CTL_C_R RCTL_T(KC_E)
+#define ALT_C_R RALT_T(KC_I)
 #define GUI_C_R RGUI_T(KC_O)
 
 // QWERTY Homerow mods
@@ -47,7 +47,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 		_______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
 		_______, _______, _______, _______, _______, _______, KC_SCLN, _______, _______, _______,
 		_______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
-		                           _______, _______, _______, _______
+		                           _______, _______, KC_TAB,  _______
 	),
 	[4] = LAYOUT( // Numbers
 		_______, KC_7,    KC_8,    KC_9,    _______, _______, _______, _______, _______, _______,
