@@ -58,20 +58,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	[5] = LAYOUT( // System
 		QK_BOOT, KC_BTN1, KC_MS_U, KC_BTN2, KC_WH_U, _______, _______, _______, _______, _______,
 		_______, KC_MS_L, KC_MS_D, KC_MS_R, KC_WH_D, _______, _______, _______, _______, _______,
-		_______, _______, _______, _______, DF(7),   _______, _______, _______, _______, _______,
+		_______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
 		                           DF(6),   TG(1),   _______, _______
 	),
 	[6] = LAYOUT( // Stenography
-		DF(0),   STN_NUM, STN_NUM, STN_NUM, STN_NUM, STN_NUM, STN_NUM, STN_NUM, STN_NUM, STN_NUM,
-		STN_NUM, STN_TL,  STN_PL,  STN_HL,  STN_STR, STN_FR,  STN_PR,  STN_LR,  STN_TR,  STN_DR,
-		STN_SL,  STN_KL,  STN_WL,  STN_RL,  STN_STR, STN_RR,  STN_BR,  STN_GR,  STN_SR,  STN_ZR,
+		STN_N1,  STN_N2,  STN_N3,  STN_N4,  STN_N5,  STN_N6,  STN_N7,  STN_N8,  STN_N9,  DF(0),
+		STN_S1,  STN_TL,  STN_PL,  STN_HL,  STN_ST1, STN_FR,  STN_PR,  STN_LR,  STN_TR,  STN_DR,
+		STN_S2,  STN_KL,  STN_WL,  STN_RL,  STN_ST2, STN_RR,  STN_BR,  STN_GR,  STN_SR,  STN_ZR,
 		                           STN_A,   STN_O,   STN_E,   STN_U
-	),
-	[7] = LAYOUT( // Gaming
-		KC_ESC,  KC_Q,    KC_W,    KC_E,    KC_R,    _______, _______, _______, _______, _______,
-		KC_TAB,  KC_A,    KC_S,    KC_D,    KC_F,    _______, _______, _______, _______, _______,
-		KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_V,    _______, _______, _______, _______, _______,
-		                           KC_LCTL, KC_SPC,  DF(0),   _______
 	),
 	[15] = LAYOUT( // Template
 		_______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
