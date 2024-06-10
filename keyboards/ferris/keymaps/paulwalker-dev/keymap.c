@@ -38,28 +38,28 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 		                           _______, _______, _______, _______
 	),
 	[2] = LAYOUT( // Nav
-		_______, _______, _______, _______, _______, KC_DOWN, KC_RGHT, KC_LBRC, KC_RBRC, _______,
-		_______, _______, _______, _______, _______, _______, _______, KC_LCBR, KC_RCBR, _______,
-		_______, _______, _______, _______, _______, KC_UP,   KC_LEFT, KC_LABK, KC_RABK, _______,
-		                           _______, _______, KC_LPRN, KC_RPRN
+		XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_DOWN, KC_RGHT, KC_LBRC, KC_RBRC, XXXXXXX,
+		KC_LGUI, KC_LALT, KC_LCTL, KC_LSFT, XXXXXXX, XXXXXXX, XXXXXXX, KC_LCBR, KC_RCBR, XXXXXXX,
+		XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_UP,   KC_LEFT, KC_LABK, KC_RABK, XXXXXXX,
+		                           XXXXXXX, XXXXXXX, KC_LPRN, KC_RPRN
 	),
 	[3] = LAYOUT( // Symbols
-		_______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
-		_______, _______, _______, _______, _______, _______, KC_SCLN, _______, _______, _______,
-		_______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
-		                           _______, _______, KC_TAB,  _______
+		XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_AT,   KC_EXLM, KC_HASH, KC_PERC, KC_CIRC,
+		KC_LGUI, KC_LALT, KC_LCTL, KC_LSFT, XXXXXXX, KC_EQL,  KC_PLUS, KC_MINS, KC_ASTR, KC_SLSH,
+		XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_AMPR, KC_QUES, KC_DQUO, KC_QUOT, KC_DLR,
+		                           XXXXXXX, XXXXXXX, KC_UNDS, KC_SCLN
 	),
 	[4] = LAYOUT( // Numbers
-		_______, KC_7,    KC_8,    KC_9,    _______, _______, _______, _______, _______, _______,
-		_______, KC_4,    KC_5,    KC_6,    _______, _______, _______, _______, _______, _______,
-		_______, KC_1,    KC_2,    KC_3,    _______, _______, _______, _______, _______, _______,
-		                           _______, KC_0,    _______, _______
+		XXXXXXX, KC_7,    KC_8,    KC_9,    XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+		XXXXXXX, KC_4,    KC_5,    KC_6,    XXXXXXX, XXXXXXX, KC_RSFT, KC_RCTL, KC_RALT, KC_RGUI,
+		XXXXXXX, KC_1,    KC_2,    KC_3,    XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+		                           KC_0,    KC_TAB,  XXXXXXX, XXXXXXX
 	),
 	[5] = LAYOUT( // System
-		QK_BOOT, KC_BTN1, KC_MS_U, KC_BTN2, KC_WH_U, _______, _______, _______, _______, _______,
-		_______, KC_MS_L, KC_MS_D, KC_MS_R, KC_WH_D, _______, _______, _______, _______, _______,
-		_______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
-		                           DF(6),   TG(1),   _______, _______
+		QK_BOOT, KC_BTN1, KC_MS_U, KC_BTN2, KC_WH_U, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+		XXXXXXX, KC_MS_L, KC_MS_D, KC_MS_R, KC_WH_D, XXXXXXX, KC_RSFT, KC_RCTL, KC_RALT, KC_RGUI,
+		XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+		                           DF(6),   TG(1),   XXXXXXX, XXXXXXX
 	),
 	[6] = LAYOUT( // Stenography
 		STN_N1,  STN_N2,  STN_N3,  STN_N4,  STN_N5,  STN_N6,  STN_N7,  STN_N8,  STN_N9,  DF(0),
