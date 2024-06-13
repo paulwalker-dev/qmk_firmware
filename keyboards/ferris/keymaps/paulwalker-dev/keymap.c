@@ -38,39 +38,43 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 		                           _______, _______, _______, _______
 	),
 	[2] = LAYOUT( // Nav
-		XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_DOWN, KC_RGHT, KC_LBRC, KC_RBRC, XXXXXXX,
-		KC_LGUI, KC_LALT, KC_LCTL, KC_LSFT, XXXXXXX, XXXXXXX, XXXXXXX, KC_LCBR, KC_RCBR, XXXXXXX,
-		XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_UP,   KC_LEFT, KC_LABK, KC_RABK, XXXXXXX,
+		XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_DOWN, KC_RGHT, KC_PGUP, XXXXXXX, XXXXXXX,
+		KC_LGUI, KC_LALT, KC_LCTL, KC_LSFT, XXXXXXX, XXXXXXX, KC_LBRC, KC_RBRC, XXXXXXX, XXXXXXX,
+		XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_UP,   KC_LEFT, KC_PGDN, XXXXXXX, XXXXXXX,
 		                           XXXXXXX, XXXXXXX, KC_LPRN, KC_RPRN
 	),
 	[3] = LAYOUT( // Symbols
 		XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_AT,   KC_EXLM, KC_HASH, KC_PERC, KC_CIRC,
-		KC_LGUI, KC_LALT, KC_LCTL, KC_LSFT, XXXXXXX, KC_EQL,  KC_PLUS, KC_MINS, KC_ASTR, KC_SLSH,
-		XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_AMPR, KC_QUES, KC_DQUO, KC_QUOT, KC_DLR,
-		                           XXXXXXX, XXXXXXX, KC_UNDS, KC_SCLN
+		KC_LGUI, KC_LALT, KC_LCTL, KC_LSFT, XXXXXXX, KC_EQL,  KC_PLUS, KC_MINS, KC_ASTR, KC_BSLS,
+		XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_AMPR, KC_QUES, KC_QUOT, KC_GRV,  KC_DLR,
+		                           XXXXXXX, XXXXXXX, KC_UNDS, KC_CAPS
 	),
 	[4] = LAYOUT( // Numbers
 		XXXXXXX, KC_7,    KC_8,    KC_9,    XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
 		XXXXXXX, KC_4,    KC_5,    KC_6,    XXXXXXX, XXXXXXX, KC_RSFT, KC_RCTL, KC_RALT, KC_RGUI,
 		XXXXXXX, KC_1,    KC_2,    KC_3,    XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
-		                           KC_0,    KC_TAB,  XXXXXXX, XXXXXXX
+
+		LT(6,KC_0),
+		KC_TAB,
+		XXXXXXX,
+		XXXXXXX
 	),
 	[5] = LAYOUT( // System
 		QK_BOOT, KC_BTN1, KC_MS_U, KC_BTN2, KC_WH_U, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
 		XXXXXXX, KC_MS_L, KC_MS_D, KC_MS_R, KC_WH_D, XXXXXXX, KC_RSFT, KC_RCTL, KC_RALT, KC_RGUI,
 		XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
-		                           DF(6),   TG(1),   XXXXXXX, XXXXXXX
+		                           DF(7),   TG(1),   XXXXXXX, XXXXXXX
 	),
-	[6] = LAYOUT( // Stenography
-		STN_N1,  STN_N2,  STN_N3,  STN_N4,  STN_N5,  STN_N6,  STN_N7,  STN_N8,  STN_N9,  DF(0),
-		STN_S1,  STN_TL,  STN_PL,  STN_HL,  STN_ST1, STN_FR,  STN_PR,  STN_LR,  STN_TR,  STN_DR,
-		STN_S2,  STN_KL,  STN_WL,  STN_RL,  STN_ST2, STN_RR,  STN_BR,  STN_GR,  STN_SR,  STN_ZR,
-		                           STN_A,   STN_O,   STN_E,   STN_U
+	[6] = LAYOUT( // F Keys
+		XXXXXXX, KC_F7,   KC_F8,   KC_F9,   KC_F10,  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+		XXXXXXX, KC_F4,   KC_F5,   KC_F6,   KC_F11,  XXXXXXX, KC_RSFT, KC_RCTL, KC_RALT, KC_RGUI,
+		XXXXXXX, KC_F1,   KC_F2,   KC_F3,   KC_F12,  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+		                           XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX
 	),
-	[15] = LAYOUT( // Template
-		_______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
-		_______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
-		_______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
-		                           _______, _______, _______, _______
+	[7] = LAYOUT( // Gaming
+		KC_ESC,  KC_1,    KC_2,    KC_3,    KC_4,    XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+		KC_TAB,  KC_Q,    KC_W,    KC_E,    KC_R,    XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+		KC_LSFT, KC_A,    KC_S,    KC_D,    KC_F,    XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+		                           KC_LCTL, KC_SPC,  DF(0),   XXXXXXX
 	),
 };
